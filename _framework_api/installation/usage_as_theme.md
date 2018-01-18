@@ -10,9 +10,9 @@ filename: installation/usage_as_theme.md
 ├── wp-content
 |   ├── themes
 |   |   ├── themename
-|   |   ├── functions.php
-|   |   ├── ...
-|   |   ├── ...
+|   |     ├── functions.php
+|   |     ├── ...
+|   |     ├── ...
 ```
 
 ```php?start_inline=1
@@ -22,10 +22,10 @@ filename: installation/usage_as_theme.md
  * A Lightweight and easy-to-use WordPress Options Framework
  *
  */
-require_once get_template_directory_uri() .'/cs-framework/cs-framework.php';
+require_once get_template_directory() .'/cs-framework/cs-framework.php';
 
 // -( or )-
-// require_once get_template_directory_uri() .'/subfolder/cs-framework/cs-framework.php';
+// require_once get_template_directory() .'/subfolder/cs-framework/cs-framework.php';
 
 ```
 
